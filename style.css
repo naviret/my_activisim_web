@@ -1,6 +1,25 @@
+@font-face {
+	font-family: "Blanka";
+	src: url('fonts/blanka/Blanka.otf');
+}
+
 html {
   height: 100%;
   width: 100%;
+  cursor: none;
+}
+
+.circ-cursor {
+	background-color: white;
+	border:1px solid white;    
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
 }
 
 * {
@@ -8,12 +27,11 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Audiowide", sans-serif;
-  ;
 }
 
 body {
   min-height: 100vh;
-  background-color: rgb(235, 234, 233);
+  background-color: black;
   width: 100%;
   margin: 0 0 0 0;
   
@@ -26,7 +44,7 @@ body {
   width: 100%;
   min-width: 800px;
   padding: 20px 80px;
-  background: rgb(235, 234, 233);
+  background: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,20 +53,22 @@ body {
 }
 
 .nav-logo a {
-  font-size: 26px;
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
+	font-size: 26px;
+	font-family: "Blanka";
+	color:  white;
+	text-decoration: none;
+	font-weight: 700;
 }
 
 .nav-bar a {
-  position: relative;
-  font-size: 14px;
-  color: black;
-  font-weight: 200;
-  text-decoration: none;
-  margin-left: 40px;
-  white-space:nowrap;
+	color: white;
+	font-family: "Blanka";
+	position: relative;
+	font-size: 14px;
+	font-weight: 200;
+	text-decoration: none;
+	margin-left: 40px;
+	white-space:nowrap;
 
 }
 
@@ -59,7 +79,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: black;
+  background: white;
   transition: .3s;
 }
 
@@ -69,6 +89,10 @@ body {
 
 .content{
   margin-top: 70px;
+}
+
+.slogan {
+
 }
 
 .petition {
