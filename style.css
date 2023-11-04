@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 80px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@ body {
 }
 
 .nav-logo a {
-  font-size: 32px;
+  font-size: 26px;
   color: black;
   text-decoration: none;
   font-weight: 700;
@@ -40,7 +40,7 @@ body {
 
 .nav-bar a {
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   color: black;
   font-weight: 200;
   text-decoration: none;
