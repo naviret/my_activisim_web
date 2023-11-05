@@ -1,12 +1,29 @@
 const cursor = document.querySelector('.circ-cursor');
+const links = document.querySelectorAll('.nav-header a')
 
-document.addEventListener("mousemove", (event) => {
-    
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
+const moveCursor = (event) => {
+    const leftPos = event.pageX - 21;
+    const topPos = event.pageY - 90;
 
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
+    cursor.style.left = leftPos + "px";
+    cursor.style.top = topPos + "px";
 
+}
+
+
+// on mouse enter, add large cursor
+links.forEach(link => {
+    link.addEventListener("mouseenter", () => {
+        cursor.classList.add("circ-cursor-large")
+    })
 })
 
+// on mouse leave, remove large cursor
+links.forEach(link => {
+    link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("circ-cursor-large")
+    })
+})
+
+
+document.addEventListener("mousemove", moveCursor);
