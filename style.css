@@ -243,6 +243,8 @@ body {
 	background-image: url(images/bg.svg);
 	background-repeat: repeat;
 	mask-image: url(images/mask.svg);
+	mask-repeat: repeat-x;
+	-webkit-mask-repeat: repeat-x;
 	-webkit-mask-image: url(images/mask.svg);
 
 }
