@@ -146,7 +146,7 @@ body {
 	padding: 0px 20px;
 }
 
-.petition-form ul {
+/* .petition-form ul {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
@@ -173,7 +173,7 @@ body {
 	margin-bottom: -4px; /* Adjust the top margin for the label */
 }
   
-.petition form li input {
+/* .petition form li input {
 	width: 80%;
 	padding: 0 5px;
 	height: 20px;
@@ -206,7 +206,7 @@ body {
 	height: 20px;
 	font-size: 10px;
 	background-color: red;
-}
+} */ */
 
 .bg {
 	height: 400px;
@@ -253,7 +253,7 @@ body {
 	color: white;
 	width: 50%;
 	font-size: 32px;
-	font-weight: 6700;
+	font-weight: 500;
 	padding: 30px;
 	border-radius: 25px;
 	letter-spacing: -2px;
@@ -267,7 +267,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-
 }
 
 .nav-block a {
@@ -302,7 +301,112 @@ body {
 
 .petition-block {
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px;
+}
+
+.petition-text {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 
-  
+.petition-call-to-action {
+	width: 50%;
+	color: white;
+	align-items: center;
+}
+
+.petition-call-to-action h1{
+	font-family: "blanka";
+	font-size: 32px;
+}
+
+.petition-call-to-action p{
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.petition-signatures {
+	font-size: 28px;
+	color: white;
+	list-style: none;
+	width: 20%;
+}
+
+.petition-form {
+	width: 90%;
+	padding: 90px 50px;
+}
+
+.petition-form ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	
+}
+
+.petition-form ul li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2.5px 10px;
+	border-radius: 10px;
+}
+
+#submit {
+	background-color: transparent;
+	background-image: none;
+}
+
+.petition-form ul li label {
+	color: white;
+	text-align: center;
+	width: fit-content;
+	padding: 0 5px;
+	z-index: 1;
+	margin-left: 5px;
+	margin-bottom: -10px;
+	font-size: 18px;
+	font-family: "blanka";
+	cursor: url(icons/cursor_light_small.png) 11 11, auto;
+
+}
+
+.petition-form ul li input {
+	height: 25px;
+	width: 250px;
+	padding: 0 5px;
+	background-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	transition: 1s;
+}
+
+.petition-form ul li input:focus {
+	outline: none;
+	border-color: red;
+}
+
+.petition-form ul li input[type="submit"] {
+	font-family: "blanka";
+	font-size: 18px;
+	height: 70px;
+	width: 150px;
+	border-radius: 20px;
+	border-width: 3px;
+	transition: 1s;
+}
+
+.petition-form ul li input[type="submit"]:hover {
+	background-color: red;
+	border-color: red;
+	cursor: url(icons/cursor_light_small.png) 11 11, auto;
+}
