@@ -2,8 +2,8 @@ const cursor = document.querySelector('.circ-cursor');
 const links = document.querySelectorAll('.nav-header a')
 
 const moveCursor = (event) => {
-    const leftPos = event.pageX - 21;
-    const topPos = event.pageY - 90;
+    const leftPos = event.pageX - 21.5;
+    const topPos = event.pageY - 21.5;
 
     cursor.style.left = leftPos + "px";
     cursor.style.top = topPos + "px";
