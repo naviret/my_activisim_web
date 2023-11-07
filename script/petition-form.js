@@ -5,6 +5,15 @@ const capitalize = (word) => {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
+const verifyEmail = (email) => {
+  
+  if (!email.includes('@')) { return false; }
+  if (!email.slice(email.indexOf('@')).includes('.')) { return false; }
+
+  return true;
+
+}
+
 
 const addSignature = (sig) => {
     
@@ -19,9 +28,9 @@ const addSignature = (sig) => {
     const my_li = document.createElement("li");
 
     // add list element with personalized signature
-    let name = capitalize(sig.name);
-    let hometown = capitalize(sig.hometown);
-    my_li.textContent = name + " from " + hometown + " supports this.";
+    let name = "<span id='signatures'>" + capitalize(sig.name) + "</span>";
+    let hometown = "<span id='signatures'>" + capitalize(sig.hometown) + "</span>";
+    my_li.innerHTML = name + " from " + hometown + " supports this.";
     my_ul.appendChild(my_li);
 
 }
@@ -40,13 +49,11 @@ const validateForm = (event) => {
 
   inputs.forEach(input => {
     if (input.value.length < 3){
-      console.log("ougyiygi1");
       containsErrors = true;
     } 
 
     if (input.name == "email"){
-      if (!(input.value.includes(".com") && input.value.includes("@"))) {
-        console.log("ouhouhoh2");
+      if (!verifyEmail(input.value)) {
         containsErrors = true;
       }
     }
@@ -63,13 +70,11 @@ const validateForm = (event) => {
       inputs[i].style.backgroundColor = "pink";
       inputs[i].style.borderColor = "red";
     }
-    console.log("huohouh");
   } else {
     for(let i = 0; i < inputs.length; i++){
       inputs[i].style.backgroundColor = "white";
       inputs[i].style.borderColor = "white";
     }
-    console.log("SUBNMIT");
     addSignature(sig);
   }
 

@@ -159,7 +159,7 @@ body {
 
 
 .title {
-	text-shadow: white 1px 0 2px;
+	text-shadow: black 2px 2px 1px;
 	position: absolute;
 	color: white;
 	bottom: -50px;
@@ -294,6 +294,11 @@ body {
 	padding: 8px;
 }
 
+#signatures {
+	color: rgb(221,213,194);
+	font-weight: bold;
+	text-shadow: rgb(221,213,194) 1px 0 1px;
+}
 
 
 .petition-form {
