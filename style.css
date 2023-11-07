@@ -358,9 +358,9 @@ body {
 	border-top: 0.1px solid rgb(36, 36, 36);
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: flex-start;
-	padding: 60px;;
+	padding: 60px 30px;
 }
 
 .footer-nav {
@@ -370,7 +370,7 @@ body {
 	align-items: center;
 }
 
-.footer-nav h3 {
+.footer h3 {
 	font-size: 15px;
 	font-family: "Blanka";
 	color: white;
@@ -388,47 +388,99 @@ body {
 }
 
 .footer-newsletter {
+	height: 120%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.footer-newsletter h3 {
-	font-family: "blanka";
-	color: white;
-	font-size: 15px;
-}
 
-.footer-newsletter ul li {
+.newsletter ul{
+	list-style: none;
+	height: 125px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 2.5px 10px;
-	border-radius: 10px;
+	align-items: center;
+
 }
 
-.footer-newsletter ul li label {
+
+.newsletter ul li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.newsletter ul li label {
 	color: white;
 	text-align: center;
 	width: fit-content;
-	padding: 0 0px;
+	padding: 0 5px;
 	z-index: 1;
-	margin-left: -4px;
+	margin-left: 5px;
 	margin-bottom: -0px;
 	font-size: 15px;
 	cursor: url(icons/cursor_light_small.png) 11 11, auto;
 
 }
 
-.footer-newsletter input {
+.newsletter ul li input {
 	height: 25px;
 	width: 250px;
-	padding: 0 5px;
+	padding: 3 5px;
 	background-color: white;
 	border-color: white;
 	border-width: 3px;
 	border-radius: 3px;
+	text-align: center;
 	transition: 2s;
+}
+
+.newsletter ul li input:focus {
+	outline: none;
+	border-color: red;
+}
+
+.newsletter input[type="submit"] {
+	height: fit-content;
+	width: fit-content;
+	padding: 2px 10px;
+	font-family: "blanka";
+	background-color: white;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 8px;
+	text-align: center;
+	transition: 2s;
+}
+
+.newsletter input[type="submit"]:hover {
+	background-color: red;
+	border-color: red;
+	cursor: url(icons/cursor_light_small.png) 11 11, auto;
+}
+
+.footer-contact {
+	height: 110%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.location {
+	color: white;
+	font-size: 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+
+.social-media img {
+	height: 50px;
 }
 
 .temp {
