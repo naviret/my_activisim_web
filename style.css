@@ -53,6 +53,7 @@ body {
 }
 
 .nav-header {
+	text-shadow: white 1px 0px 1px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -65,9 +66,11 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+	border-bottom: 0.1px solid rgb(36, 36, 36);
 }
 
 .nav-logo a {
+	text-shadow: white 1px 0px 15px;
 	font-size: 26px;
 	font-family: "Blanka";
 	color:  white;
@@ -77,6 +80,7 @@ body {
 }
 
 .nav-bar a {
+	text-shadow: white 1px 0px 1px;
 	color: white;
 	font-family: "Blanka";
 	position: relative;
@@ -90,31 +94,35 @@ body {
 }
 
 .nav-bar a::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: .1s;
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: 2s;
 }
 
 .nav-bar a:hover::before {
-  width: 100%;
-  
+  	width: 100%;
 }
 
-.content{
-  margin-top: 70px;
+#active {
+	color: white;
+	text-shadow: white 1px 4px 10px;
 }
 
+
+.nav-bar a:hover::before + #active {
+	width: 100%;
+}
 
 .petition {
-  width: 100%;
-  padding: 20px 20px;
-  background-color: white;
-  margin: 50px 50px;
+	width: 100%;
+	padding: 20px 20px;
+	background-color: white;
+	margin: 50px 50px;
 }
 
 .petition-content {
