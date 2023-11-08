@@ -519,6 +519,10 @@ body {
 	height: 50px;
 }
 
+.social-media a {
+	text-decoration: none;
+}
+
 
 .temp {
 	width: 25%;
