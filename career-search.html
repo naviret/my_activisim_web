@@ -1,84 +1,119 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>replit</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Audiowide"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+    <body>
+        <header class="nav-header">
+            <div class="nav-logo">
+                <a href="./index.html" class="logo">Milestones</a>
+            </div>
+            <nav class="nav-bar">
+                <a id="active" href="./career-search.html">Career Search</a>
+                <a href="./financial-literacy.html">Financial Literacy</a>
+                <a href="./about-us.html">About Us</a>
+            </nav>
+        </header>
 
-<body>
-  
-  <header class="nav-header">
-    <div class="nav-logo">
-      <a href="./index.html" class="logo">Milestones</a>
-    </div>
-    <nav class="nav-bar">
-      <a id="active" href="./career-search.html">Career Search</a>
-      <a href="./financial-literacy.html">Financial Literacy</a>
-      <a href="./about-us.html">About Us</a>
-    </nav>
-  </header>
-  
-  <div class="temp-content"> 
+        <div class="temp-content"></div>
 
-  </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <h3>Useful Links</h3>
+                <nav class="nav-block">
+                    <a href="./career-search.html">Career Search</a>
+                    <a href="./financial-literacy.html">Financial Literacy</a>
+                    <a href="./about-us.html">About Us</a>
+                </nav>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <form class="newsletter">
+                    <ul>
+                        <li>
+                            <input type="email" name="email" maxlength="100"">
+                        </li>
+                        <li>
+                            <input type="submit" value="Subscribe" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p class="location">
+                    116th and Broadway, <br />
+                    New York, NY 10027
+                </p>
+                <div class="social-media">
+                    <a
+                        href="https://www.linkedin.com/in/ivaneduardorivera/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="linkedin-icon"
+                            src="icons/social/icons8-linkedin.svg"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/naviret"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="github-icon"
+                            src="icons/social/icons8-github.svg"
+                        />
+                    </a>
+                    <a
+                        href="https://www.facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="facebook-icon"
+                            src="icons/social/icons8-facebook.svg"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="instagram-icon"
+                            src="icons/social/icons8-instagram-old.svg"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
 
-
-  <div class="footer">
-    <div class="footer-nav">
-      <h3>Useful Links</h3>
-      <nav class="nav-block">
-        <a href="./career-search.html">Career Search</a>
-        <a href="./financial-literacy.html">Financial Literacy</a>
-        <a href="./about-us.html">About Us</a>
-      </nav>
-    </div>
-    <div class="footer-newsletter">
-      <h3>Newsletter</h3>
-      <form class="newsletter">
-        <ul>
-          <li>
-            <input type="email" name="email" maxlength="100"">
-          </li>
-          <li>
-            <input type="submit" value="Subscribe">
-          </li>
-        </ul>        
-      </form>
-    </div>
-    <div class="footer-contact">
-      <h3>Contact</h3>
-      <p class="location">
-        116th and Broadway, <br>
-        New York, NY 10027
-      </p>
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/ivaneduardorivera/" target="_blank" rel="noopener noreferrer">
-          <img class="linkedin-icon" src="icons/social/icons8-linkedin.svg">
-        </a>
-        <a href="https://github.com/naviret" target="_blank" rel="noopener noreferrer">
-          <img class="github-icon" src="icons/social/icons8-github.svg">
-        </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <img class="facebook-icon" src="icons/social/icons8-facebook.svg"> 
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img class="instagram-icon" src="icons/social/icons8-instagram-old.svg">
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-  <script src="script/script.js"></script>
-  <script src="script/petition-form.js"></script>
-  <script src="script/cursor.js"></script>
-
-
-</body>
-
+        <script src="script/script.js"></script>
+        <script src="script/petition-form.js"></script>
+        <script src="script/cursor.js"></script>
+    </body>
 </html>
+
+<!-- 
+  Next steps:
+  Add transition between pages
+
+  Add modal -> asks to add to form after some time, 
+  also give it a way for it to be removed
+
+  Add page title that slides up 
+  Add a little discreption
+  Add a list of free services/website that are good for this
+  Add video of the manager from uber explaining how to do
+  interviews
+ -->
