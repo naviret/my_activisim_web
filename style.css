@@ -45,8 +45,8 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: rgb(13, 14, 15);
     width: 100%;
+    background-color: rgb(13, 14, 15);
     margin: 0 0 0 0;
     cursor: url(icons/cursor/cursor_light_small.png) 11 11, auto;
 }
@@ -64,7 +64,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 15;
     border-bottom: 0.1px solid rgb(36, 36, 36);
 }
 
@@ -159,7 +159,6 @@ body {
 
 .title-block {
     height: 100vh;
-    z-index: 5;
 }
 
 .title {
@@ -172,6 +171,7 @@ body {
     font-size: 150px;
     font-family: 'Blanka';
     letter-spacing: -1%;
+    z-index: 5;
 }
 
 .intro-block {
@@ -534,4 +534,103 @@ body {
 .active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+.modal {
+    display: flex; /* hides the modal from view by default */
+    position: fixed; /* keeps the modal in one place */
+    z-index: 20; /* positions the modal on top of all other elements on the screen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: auto;
+}
+
+.modal-exit {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    background: none;
+    border: none;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    font-size: 40px;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; /* these flexbox rules center the content on the screen */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-content-text {
+    width: 100%;
+    padding: 15px;
+}
+
+.modal-content-text h1 {
+    font-family: 'blanka';
+}
+
+.modal-form {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-form ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-form ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.5px 5px;
+}
+
+.modal-form ul li label {
+    color: black;
+    width: fit-content;
+    padding: 0 5px;
+    z-index: 1;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: 'blanka';
+    cursor: url(icons/cursor/cursor_light_small.png) 11 11, auto;
+}
+
+.modal-form ul li input {
+    border-width: 2px;
+    height: 25px;
+    width: 100%;
+    transition: 2s;
+}
+
+.modal-form ul li input[type='submit'] {
+    border-width: 2px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    transition: 2s;
+    font-size: 14px;
 }
