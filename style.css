@@ -416,7 +416,7 @@ body {
 }
 
 .footer a:hover::before {
-    width: 0%;
+    width: 100%;
 }
 
 .footer-newsletter {
@@ -521,7 +521,7 @@ body {
 }
 
 .temp-content {
-    height: 90vh;
+    height: 200vh;
 }
 
 .revealable {
@@ -537,7 +537,7 @@ body {
 }
 
 .modal {
-    display: flex; /* hides the modal from view by default */
+    display: none; /* hides the modal from view by default */
     position: fixed; /* keeps the modal in one place */
     z-index: 20; /* positions the modal on top of all other elements on the screen */
     left: 0;
@@ -549,6 +549,7 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.9);
     margin: auto;
+    transition: 2s;
 }
 
 .modal-exit {
@@ -561,6 +562,11 @@ body {
     height: fit-content;
     width: fit-content;
     font-size: 40px;
+    transition: 0.1s;
+}
+
+.modal-exit:hover {
+    text-shadow: rgb(221, 213, 194) 2px 2px 10px;
 }
 
 .modal-content {
